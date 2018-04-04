@@ -57,3 +57,29 @@ var ExVm = Vue.extend({
    2. mounted
    3. updated
    4. destroyed
+
+---
+
+# Vue Components
+
+**"화면에 비춰지는 뷰의 단위를 쪼개어 재활용이 가능한 형태로 관리하는 것"**
+
+##### Global Component
+
+```
+//컴포넌트 등록하기
+Vue.component('Component name', {
+  template: '여기에 component 내용을 써주세요'
+});
+```
+
+##### Local Component
+
+```
+new Vue({
+  components: {
+    'Component name' : 내용
+  }
+})
+```
+
